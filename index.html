@@ -1,11 +1,109 @@
+<script type="text/javascript" src="./js/jquery.js"></script>
+
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="./css/main.css">
         <title>Projeto Rock in Rio - Desenvolvimento Web 5o Semestre</title>
     </head>
     <body>
-    <header>
 
-    </header>
+      <header class="menu-superior">
+        <div class="menu-superior-1">
+          <div class="menu-superior-logo">
+            <img src="" />
+          </div>
+          <div class="menu-superior-botoes">
+            <ul>
+              <li><a href="">REGULAMENTO</a></li>
+              <li><a href="">SOBRE</a></li>
+              <li><a href="">LOGIN</a></li>
+          </div>
+      </header>
+
+      <div class="imagem central">
+        <img src="" />
+        <h1>INSCREVA-SE E CONCORRA PARA UM DOS DIAS DO ROCK IN RIO</h1>
+      </div>
+
+      <div id="bloco-principal1" class="bloco-ticket">
+        <div class="bloco-menor">
+        <h2>PARTICIPE DO SORTEIO PARA O MAIOR FESTIVAL DO BRASIL! Saiba mais:<h2>
+        <p>Texto aqui</p>
+        </div>
+
+        <div class="bloco-menor">
+        <img src="">
+        </div>
+      </div>
+
+      <div id="bloco2" class="bloco-ticket">
+        <h2>INSCREVA-SE</h2>
+        <form>
+          <div class="form-group">
+            <label for="nomecompleto" class="label-form">Nome Completo</label>
+            <input type="text" id="nome-completo" class="input-required">
+          </div>
+          <div class="form-group">
+            <label for="email" class="label-form">E-mail</label>
+            <input type="email" id="email" class="input-required">
+          </div>
+          <div class="form-group">
+            <label for="senha" class="label-form">Senha</label>
+            <input type="password" id="senha" class="input-required">
+          </div>
+          <div class="form-group">
+            <label for="telefone" class="label-form">Telefone</label>
+            <input type="text" id="telefone" oninput="mascara(this, mascaratelefone)" class="input-required">
+          </div>
+          <div class="form-group">
+            <label for="cep" class="label-form">CPF</label>
+            <input type="text" oninput="mascaracpf(this)" id="cpf" class="input-required" maxlength="11">
+          </div>
+          <div class="form-group">
+            <label for="data-de-nascimento" class="label-form">Data de Nascimento</label>
+            <input type="date" id="data-de-nascimento" class="input-required">
+          </div>
+          <div class="form-group">
+            <label for="cep" class="label-form">CEP</label>
+            <input type="text" oninput="mascaracep(this)" id="cep" class="input-required" maxlength="8">
+          </div>
+          <div class="form-group">
+            <label for="lograduro" class="label-form">Endereço</label>
+            <input type="text" id="logradouro" class="input-required">
+          </div>
+          <div class="form-group">
+            <label for="complemento" class="label-form">Complemento</label>
+            <input type="text" id="complemento" class="input-required">
+          </div>
+          <div class="form-group">
+            <label for="bairro" class="label-form">Bairro</label>
+            <input type="text" id="bairro" class="input-required">
+          </div>
+          <div class="form-group">
+            <label for="localidade" class="label-form">Cidade</label>
+            <input type="text" id="localidade" class="input-required">
+          </div>
+          <div class="form-group">
+            <label for="uf" class="label-form">Estado</label>
+            <input type="text" id="uf" class="input-required">
+          </div>
+          <div class="form-group">
+            <label for="dia-do-show" class="label-form">Escolha o dia do show:</label>
+            <select id="dia-do-show" class="input-required">
+              <option value="2">2 de Setembro</option>
+              <option value="3">3 de Setembro</option>
+              <option value="4">4 de Setembro</option>
+              <option value="8">8 de Setembro</option>
+              <option value="9">9 de Setembro</option>
+              <option value="10">10 de Setembro</option>
+              <option value="11">11 de Setembro</option>
+            </select>
+            <div class="form-group">
+              <label for="justificativa-promo" class="label-form">Por que você merece ganhar o ingresso para o Rock in Rio?</label>
+              <textarea id="justificativa-promo" class="input-required" rows="4" cols="50"></textarea>
+            </div>  
+            <input type="submit" value="Participar da promoção!">
+          </div>
+          <script type="text/javascript" src="./js/main.js"></script>
     </body>
 </html>
