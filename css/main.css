@@ -1,13 +1,84 @@
 body{
     color: #fff;
     line-height: 1.5;
-    height:100%;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    background:linear-gradient(0deg, rgba(1, 28, 51, 0.8), rgba(1, 54, 100, 0.74)), url(../img/background-geral.jpg) no-repeat center center;
+    background:linear-gradient(0deg, rgba(1, 28, 51, 0.95), rgba(1, 54, 100, 0.91)), url(../img/background-geral.jpg) no-repeat center center;
     background-size: cover;
 }
+input, label {
+    display:block;
+}
 
+
+.form-group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.each-label{
+    display:flex;
+    justify-content:space-around;
+    flex-direction: column;
+}
+input, select{
+width: 200px;
+padding: 15px 10px 12px 20px;
+margin: 2px 30px 20px 0px;
+border: 0;
+border-radius: 3px;
+background-color: rgb(233, 233, 233);
+height:20px;
+
+}
+
+.submit {
+    margin: 30px 0px 40px 0px;
+    cursor: pointer;
+    width: 400px;
+    height: 50px;
+    padding: 10px 5px 10px 5px;
+    font-weight: 600;
+    font-size: 22px;
+    background: rgba(226, 0, 94, 0.8);
+    color: white;
+    transition: 0.2s;
+}
+
+.submit:hover {
+    transition: 0.2s;
+    animation: pulse 6s infinite;
+    }
+
+    @keyframes pulse {
+        0% {
+          background-color: rgb(226, 0, 94);
+          color: white;
+          width: 400px;
+        height: 50px;
+        }
+        50% {
+          background-color: rgb(245, 0, 0);
+          width: 405px;
+          height: 51px;
+        }
+
+        100% {
+            background-color: rgb(226, 0, 94);
+            width: 400px;
+            height: 50px;
+            color: white;
+            }
+      }
+
+input:read-write{
+    border:0;
+    border-bottom: 1px solid rgb(0, 119, 216);
+}
 main{
     display: block;
     margin: 0 auto;
@@ -61,23 +132,37 @@ nav a:hover {
 }
 
 .regulamento {
+    overflow:auto;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
-    max-width: 80%;
     text-align: justify;
+    background-color:rgb(245, 245, 245);
+    color:black;
+    line-height:1.5;
+    font-weight: 300;
+    height: 500px;
+    overflow-y: scroll;
+
+
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+    body{
+        font-size: 1.5em;
+        background: url(../img/background-mobile.png), rgb(27, 27, 27);
+    }
+
     nav {
     height: 16vh;
     }
     .nav-list {
+        font-size:12px;
         text-align: center;
         top: 8vh;
         height:5vh;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         line-height:2;
     }
 
