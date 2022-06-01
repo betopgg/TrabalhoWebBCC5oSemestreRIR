@@ -1,6 +1,63 @@
 body{
+    color: #fff;
+    line-height: 1.5;
+    height:100%;
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 110%;
+    background:linear-gradient(0deg, rgba(1, 28, 51, 0.8), rgba(1, 54, 100, 0.74)), url(../img/background-geral.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+main{
+    display: block;
+    margin: 0 auto;
+    max-width: 900px;
+    width:70%;
+
+}
+
+main h1{
+    text-align:center;
+}
+nav{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    height:8vh;
+    margin: 0 auto;
+    position:relative;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: rgba(226, 0, 94, 0.8);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 1px;
+    margin-left: 30px;
+}
+.nav-logo{
+    float:left;
+    height: 90%;
+    padding:5px;
+    transition:0.2s;
+}
+
+.nav-logo:hover{
+    opacity:0.8;
 }
 
 .regulamento {
@@ -8,4 +65,23 @@ body{
     font-size: small;
     max-width: 80%;
     text-align: justify;
+}
+
+@media (max-width: 500px) {
+    nav {
+    height: 16vh;
+    }
+    .nav-list {
+        text-align: center;
+        top: 8vh;
+        height:5vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        line-height:2;
+    }
+
+    .nav-list li {
+        margin-left:0;
+    }
 }
