@@ -1,6 +1,6 @@
 <?php
 
-require_once '../BD/conectabanco.php';
+require_once 'conectabanco.php';
 require_once 'usuario.class.php';
 
 if(isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['senha']) && !empty($_POST['senha'])){
