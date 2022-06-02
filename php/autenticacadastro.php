@@ -15,11 +15,7 @@
     $telefone = $_POST["tele"];
     $cep = $_POST["cep"];
 	$dataia = $_POST["dia"];
-<<<<<<< HEAD
 	$justificativa = $_POST["justificativa"];
-=======
-    $justificativa = $_POST["justificativa"];
->>>>>>> origin/php
 
 	$endereco = $_POST["endereco"];
 	$complemento = $_POST["complemento"];
@@ -31,11 +27,7 @@
 
 	//monta sql para o banco de dados ,
 	$sql = "INSERT  INTO  pseudo_dados (NomeCompleto, CPF, Email, Senha, DataNascimento, Telefone, CEP, Endereco, dataida, justificativa)  
-<<<<<<< HEAD
 	VALUES ('" . $nome . "','" . $CPF . "','" . $email . "','" . $senha . "','" . $datanascimento . "','" . $telefone . "','" . $cep . "','" . $enderecocompleto . "','" . $dataia ."','" . $justificativa . "')";
-=======
-	VALUES ('" . $nome . "','" . $CPF . "','" . $email . "','" . $senha . "','" . $datanascimento . "','" . $telefone . "','" . $cep . "','" . $enderecocompleto . "','" . $dataia . "','" . $justificativa . "')";
->>>>>>> origin/php
 	echo $sql;
 	echo "<br><br>";
 
