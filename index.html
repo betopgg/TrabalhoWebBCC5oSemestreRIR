@@ -5,6 +5,9 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="./css/main.css">
         <title>Projeto Rock in Rio - Desenvolvimento Web 5o Semestre</title>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
     </head>
     <body>
 
@@ -17,22 +20,32 @@
               <li><a href="./login.html">VERIFICAR CADASTRO</a></li>
             </ul>
             </nav>
+            <div class="imagem-central">
+              <img src="./img/Logo-rock-in-rio-hero-min.png" />
+              <h3 class="subtitulo">INSCREVA-SE E CONCORRA PARA UM DOS DIAS DO ROCK IN RIO</h3>
+            </div>
       </header>
 
     <main>
-      <div class="imagem central">
-        <img src="" />
-        <h1>INSCREVA-SE E CONCORRA PARA UM DOS DIAS DO ROCK IN RIO</h1>
-      </div>
 
-      <div id="bloco-principal1" class="bloco-ticket">
+
+      <div id="bloco-principal1" class="bloco-ticket bloco-principal1">
         <div class="bloco-menor">
-        <h2>PARTICIPE DO SORTEIO PARA O MAIOR FESTIVAL DO BRASIL! Saiba mais:<h2>
-        <p>Texto aqui</p>
+        <h3>SOBRE</h3>
+        <p>O Rock in Rio é um festival de música idealizado pelo empresário brasileiro Roberto Medina pela primeira vez em 1985. É reconhecido como um dos maiores festivais musicais do planeta. Foi originalmente organizado no Rio de Janeiro, de onde vem o nome. Tornou-se um evento de repercussão em nível mundial e, em 2004, teve a sua primeira edição fora do Brasil em Lisboa, Portugal.
+
+          Ao longo da sua história, o Rock in Rio teve 20 edições, oito no Brasil, oito em Portugal, três na Espanha e uma nos Estados Unidos. Em 2008, foi realizado pela primeira vez em dois locais diferentes, Lisboa e Madrid. Além destas, duas edições foram canceladas: Madrid e Buenos Aires, ambas programadas para 2014.
+          
+          O hino do festival é de autoria do compositor Nelson Wellington e do maestro Eduardo Souto Neto e foi gravado originalmente pelo grupo Roupa Nova. O festival é considerado o oitavo melhor do mundo pelo site especializado Festival Fling. Desde a quarta edição o festival costuma ocorrer bianualmente no início da primavera em seu país de origem (Brasil). A última edição do festival aconteceu em 2019 dentro do Parque Olímpico do Rio de Janeiro.</p>
         </div>
 
-        <div class="bloco-menor">
-        <img src="">
+        <div class="bloco-menor2">
+          <img src="./img/logo_rio.png">
+        </div>
+        <div class="fundo-ticket">
+          <img src="./img/borda-ticket.png" class="borda-ticket">
+          <img src="./img/pontilhado.svg" class="pontilhado">
+          <img src="./img/borda-ticket.png" class="borda-ticket">
         </div>
       </div>
 
@@ -111,12 +124,16 @@
                 <option value="11">11 de Setembro</option>
               </select>
             </div>
+              <div class="form-group">
               <div class="each-label">
-                <label for="justificativa-promo" class="label-form">Por que você merece ganhar o ingresso para o Rock in Rio?</label>
-                <textarea id="justificativa-promo" class="input-required " rows="4" cols="50" name="justificativa"></textarea>
+                <label for="justificativa-promo" class="label-form mobile-fix-textbox">Por que você merece ganhar o ingresso para o Rock in Rio?</label>
+                <textarea id="justificativa-promo" class="input-required" rows="4" cols="50" name="justificativa"></textarea>
               </div> 
+            </div>
             <input class="submit" type="submit" value="Participar da promoção!">
-          </div>
+            </div>
+
+            </form>
           <script type="text/javascript" src="./js/main.js"></script>
     </main>  
     </body>

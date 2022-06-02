@@ -1,11 +1,20 @@
 body{
-    color: #fff;
+    color: rgb(19, 19, 19);
     line-height: 1.5;
     width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background:linear-gradient(0deg, rgba(1, 28, 51, 0.95), rgba(1, 54, 100, 0.91)), url(../img/background-geral.jpg) no-repeat center center;
     background-size: cover;
 }
+
+p{
+    font-size:14px;
+    line-height:1.2;
+    font-weight: 400;
+    text-align:justify;
+    padding:2vh 2vw 1vh 2vw;
+}
+
 input, label {
     display:block;
 }
@@ -18,22 +27,48 @@ form{
 }
 
 .form-group{
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: flex-start;
     align-items: flex-start;
+    justify-content: space-evenly;
+    margin: 0px 15px 0px 15px;
     
 }
 
-.each-label{
-    display:flex;
-    justify-content:space-around;
-    flex-direction: column;
+.fundo-ticket {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.bloco-principal1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     align-items: flex-start;
 }
-input, select{
+
+.bloco-menor{
+    width:60%;
+}
+
+.bloco-menor2{
+    width:40%;
+}
+
+
+.each-label{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+input, select, textarea{
 width: 200px;
 padding: 15px 10px 12px 20px;
 margin: 2px 30px 20px 0px;
@@ -41,7 +76,21 @@ border: 0;
 border-radius: 3px;
 background-color: rgb(233, 233, 233);
 height:20px;
+}
 
+textarea{
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.imagem-central{
+    margin: 10px auto 5px auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    max-width: 800;
 }
 
 .altura40{
@@ -94,14 +143,40 @@ input:read-write{
 main{
     display: block;
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 800px;
     width:70%;
 
 }
 
-main h1{
+main h1,h2{
     text-align:center;
 }
+
+h3 {
+    text-align: justify;
+    padding: 2vh 2vw 1vh 2vw;
+}
+
+.subtitulo{
+    font-size: 12px;
+    margin: 1vh auto 4vh auto;
+    color: white;
+}
+
+.bloco-ticket{
+    margin: 30px auto 30px auto;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius:25px;
+}
+.borda-ticket{
+    width:3%;
+}
+
+.pontilhado{
+    width:94%;
+}
+
 nav{
     display:flex;
     justify-content:space-around;
@@ -144,23 +219,23 @@ nav a:hover {
 }
 
 .regulamento {
-    overflow:auto;
+    overflow: auto;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
     text-align: justify;
-    background-color:rgb(245, 245, 245);
-    color:black;
-    line-height:1.5;
+    background-color: rgb(245, 245, 245);
+    color: black;
+    line-height: 1.5;
     font-weight: 300;
     height: 500px;
     overflow-y: scroll;
-
-
+    width: 80%;
+    margin: 0 auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     body{
-        font-size: 1.5em;
+        font-size: 1em;
         background: url(../img/background-mobile.png), rgb(27, 27, 27);
     }
 
@@ -178,7 +253,49 @@ nav a:hover {
         line-height:2;
     }
 
+    .bloco-ticket{
+        display: flex;
+        margin: 20px 0px 20px 0px;
+        width: 100%;
+        background-image: none;
+        flex-direction: column;
+        align-items: stretch;
+        align-content: center;
+    }
     .nav-list li {
         margin-left:0;
+    }
+
+    input, select, textarea {
+        width: 200px;
+        padding: 15px 10px 12px 20px;
+        margin: 10px 0px 20px 0px;
+        border: 0;
+        border-radius: 3px;
+        background-color: rgb(233, 233, 233);
+        height: 20px;
+    }
+
+    textarea{
+        width: 90%;
+        height: 100px;
+        margin: 0 auto;
+    }
+    
+    .mobile-fix-textbox{
+        text-align: center;
+        display: block;
+        margin: 10px;
+    }
+    
+    .each-label {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bloco-menor {
+        width: 100%;
     }
 }
