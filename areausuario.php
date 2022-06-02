@@ -1,5 +1,23 @@
 <script type="text/javascript" src="./js/jquery.js"></script>
 
+
+<?php
+
+if(!isset($_SESSION)){
+
+  session_start();
+}
+
+include('./php/protect.php');
+require('./php/conectabanco.php');
+require('./php/autenticalogin.php');
+
+
+//o motivo de eu mudar esse arquivo para PHP, foi o pq eu precisava utilizar comandos aqui.
+//e é possivel usar html no php, e n ao contario. 
+
+?>
+
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="./css/main.css">
@@ -15,6 +33,7 @@
           <li><a href="./regulamento.html">REGULAMENTO</a></li>
           <li><a href="./index.html">SOBRE</a></li>
           <li><a href="./login.html">VERIFICAR CADASTRO</a></li>
+          <li><a href="./php/logout.php">Sair</a></li>
         </ul>
         </nav>
   </header>
@@ -23,13 +42,13 @@
       <div id="bloco-login" class="bloco-ticket bloco-login">
         <img src="">
         <h2>Meu Cadastro</h2>
-        <p class="titulo-area-usuario">E-mail:<p>
+        <p class="titulo-area-usuario">E-mail: <?php echo $_SESSION["email"]; ?> <p>
         <p>Email-puxado do banco</p>
-        <p class="titulo-area-usuario">Data de Nascimento:<p>
+        <p class="titulo-area-usuario">Data de Nascimento: <?php echo $_SESSION["dataN"]; ?> <p>
         <p>Data puxada do banco</p>
-        <p class="titulo-area-usuario">CPF:</p>
+        <p class="titulo-area-usuario">CPF: <?php echo $_SESSION["cpf"]; ?></p>
         <p>CPF puxado do banco</p>
-        <p class="titulo-area-usuario">Endereço:</p>
+        <p class="titulo-area-usuario">Endereço: <?php echo $enderecocompleto; ?></p>
         <p>Endereço puxado do banco</p>
         </div>
 
@@ -42,3 +61,5 @@
   </main>
     </body>
 </html>
+
+

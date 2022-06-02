@@ -22,14 +22,14 @@
       <div id="bloco-login" class="bloco-ticket bloco-login">
         <img src="">
         <h2>Página de Login</h2>
-        <form action="">
+        <form action="./php/autenticalogin.php" method="post">
           <div class="form-group">
             <label for="email" class="label-form">E-mail</label>
-            <input type="email" id="email" class="input-required">
+            <input type="email" id="email" class="input-required" name="email">
           </div>
           <div class="form-group">
             <label for="senha" class="label-form">Senha</label>
-            <input type="password" id="senha" class="input-required">
+            <input type="password" id="senha" class="input-required" name="senha">
           </div>
         <a href="#">Esqueci minha senha</a>
         </div>
@@ -37,6 +37,9 @@
         <div id="bloco-sem-ticket" class="bloco-sem-ticket">
         <img src="">
       </div>
+    </div> 
+    <input class="submit" type="submit" value="login">
+    </div>
           <script type="text/javascript" src="./js/main.js"></script>
         </main>
         </body>

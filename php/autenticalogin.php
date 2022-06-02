@@ -1,7 +1,7 @@
 <?php
 
-require_once 'conectabanco.php';
-require_once 'usuario.class.php';
+require 'conectabanco.php';
+require 'usuario.class.php';
 
 if(isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['senha']) && !empty($_POST['senha'])){
 
@@ -12,16 +12,16 @@ $senha = addslashes($_POST['senha']);
 
 if($u->login($email, $senha) == true) {
     if(isset($_SESSION['id'])){
-        header('Location: entrar.php');
+        header('Location: ../areausuario.php');
 
     }
 else{
-    header('Location: login.php');
+    header('Location: ../login.html');
 }
 }
 
 else{
-    header('Location: login.php');
+    header('Location: ../login.html');
 
 }
 
@@ -29,7 +29,7 @@ else{
 
 else{
 
-    header('Location: login.php');
+    header('Location: ../login.html');
 
 }
 
