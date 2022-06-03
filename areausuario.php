@@ -8,13 +8,9 @@ if(!isset($_SESSION)){
   session_start();
 }
 
-include('./php/protect.php');
-require('./php/conectabanco.php');
-require('./php/autenticalogin.php');
+include('./php/protect.php'); // proteção de sessão
+require('./php/conectabanco.php'); // Conecta ao banco de dados
 
-
-//o motivo de eu mudar esse arquivo para PHP, foi o pq eu precisava utilizar comandos aqui.
-//e é possivel usar html no php, e n ao contario. 
 
 ?>
 
