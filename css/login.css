@@ -3,8 +3,7 @@ body{
     line-height: 1.5;
     width: 100%;
     font-family: 'Poppins', sans-serif;
-    background:linear-gradient(0deg, rgba(1, 28, 51, 0.95), rgba(1, 54, 100, 0.91)), url(../img/background-geral.jpg) no-repeat center center;
-    background-size: cover;
+background: url(../img/background-mobile.png), rgb(27, 27, 27);
 }
 
 p{
@@ -29,9 +28,13 @@ form{
     margin: 1vh 0 1vh 0;
 }
 
+.bloco-sem-ticket{
+    width:100%;
+}
+
 .form-group{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
     align-items: flex-start;
@@ -54,7 +57,7 @@ form{
 }
 
 .arte-rock-vertical{
-    width:100%;
+    width:400px;
 }
 
 .arte-rock-horizontal{
@@ -70,6 +73,14 @@ form{
     align-content: center;
     justify-content: center;
     align-items: center;
+}
+
+.bloco-login{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2vh 1vw 2vh 2vw;
 }
 
 .bloco-menor{
@@ -88,13 +99,14 @@ form{
 }
 
 input, select, textarea{
-width: 200px;
-padding: 15px 10px 12px 20px;
-margin: 2px 30px 20px 0px;
-border: 0;
-border-radius: 3px;
-background-color: rgb(233, 233, 233);
-height:20px;
+    width: 20vw;
+    min-width: 200px;
+    padding: 15px 10px 12px 20px;
+    margin: 2px 30px 20px 0px;
+    border: 0;
+    border-radius: 3px;
+    background-color: rgb(233, 233, 233);
+    height: 20px;
 }
 
 textarea{
@@ -142,7 +154,6 @@ height: 50px;
           background-color: rgb(226, 0, 94);
           color: white;
         }
-
         50% {
           background-color: rgb(245, 0, 0);
         }
@@ -158,11 +169,10 @@ input:read-write{
     border-bottom: 1px solid rgb(0, 119, 216);
 }
 main{
-    display: block;
+    display: flex;
     margin: 0 auto;
-    max-width: 800px;
-    width:70%;
-
+    max-width: 90%;
+    width: 55%;
 }
 
 main h1,h2{
@@ -181,10 +191,10 @@ h3 {
 }
 
 .bloco-ticket{
-    margin: 30px auto 30px auto;
-    width: 100%;
+    height: 40vh;
+    margin: 30px 100px 0px 0px;
     background-color: rgba(255, 255, 255, 0.7);
-    border-radius:25px;
+    border-radius: 25px;
 }
 .borda-ticket{
     width:3%;
@@ -250,7 +260,16 @@ nav a:hover {
     margin: 0 auto;
 }
 
-@media (max-width: 590px) {
+@media (max-width: 1000px) {
+    main{
+        display: flex;
+        margin: 0 auto;
+        max-width: 90%;
+        width: 60%;
+        flex-direction: column;
+        align-items: center;
+    }
+
     body{
         font-size: 1em;
         background: url(../img/background-mobile.png), rgb(27, 27, 27);
@@ -299,9 +318,10 @@ nav a:hover {
     }
 
     input, select, textarea {
-        width: 200px;
+        width: 20vw;
+        min-width: 200px;
         padding: 15px 10px 12px 20px;
-        margin: 10px 0px 20px 0px;
+        margin: 2px 30px 20px 0px;
         border: 0;
         border-radius: 3px;
         background-color: rgb(233, 233, 233);
