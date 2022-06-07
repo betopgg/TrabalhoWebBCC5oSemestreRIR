@@ -1,9 +1,9 @@
 <script type="text/javascript" src="./js/jquery.js"></script>
 
+<?php
 
 include('./php/protect.php'); //inclui o arquivo que protege a página
 require('./php/conectabanco.php'); //inclui o arquivo que faz a conexão com o banco
-// require('./php/buscadados.class.php'); //inclui class usuario
 
 
 ?>
