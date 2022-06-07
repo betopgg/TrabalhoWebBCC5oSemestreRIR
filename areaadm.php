@@ -31,7 +31,11 @@ var_dump($_SESSION['nome'], $_SESSION['cpf'], $_SESSION['dia'], $_SESSION['id'])
 </head>
 <body>
     
-bbbbbbbbbbbbbbbbbbbbbbb
+    <h1>Sorteio</h1>
+    <p>parabens <?php echo $_SESSION['nome']; ?>, você foi sorteado para o show do rock in rio no dia <?php echo $_SESSION['dia']; ?>.</p>
+    <p>Seu CPF é <?php echo $_SESSION['cpf']; ?>.</p>
+
+        
 
 
 </body>
