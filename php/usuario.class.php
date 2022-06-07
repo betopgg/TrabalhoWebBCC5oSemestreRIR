@@ -22,6 +22,7 @@ class usuario {
             $_SESSION['cpf'] = $dado['CPF'];
             $_SESSION['datan']= $dado['DataNascimento'];
             $_SESSION['endereco']= $dado['Endereco'];
+            $_SESSION['nivel']= $dado['Nivel'];
             $_SESSION['dia']= $dado['DataIda'];
             $_SESSION['justificativa']= $dado['Justificativa'];
 
