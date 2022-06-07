@@ -1,15 +1,9 @@
 <script type="text/javascript" src="./js/jquery.js"></script>
 
 
-<?php
-
-if(!isset($_SESSION)){
-
-  session_start();
-}
-
-include('./php/protect.php'); // proteção de sessão
-require('./php/conectabanco.php'); // Conecta ao banco de dados
+include('./php/protect.php'); //inclui o arquivo que protege a página
+require('./php/conectabanco.php'); //inclui o arquivo que faz a conexão com o banco
+// require('./php/buscadados.class.php'); //inclui class usuario
 
 
 ?>
@@ -38,14 +32,14 @@ require('./php/conectabanco.php'); // Conecta ao banco de dados
       <div id="bloco-login" class="bloco-ticket bloco-login">
         <img src="">
         <h2>Meu Cadastro</h2>
-        <p class="titulo-area-usuario">E-mail: <?php echo $_SESSION["email"]; ?> <p>
-        <p>Email-puxado do banco</p>
-        <p class="titulo-area-usuario">Data de Nascimento: <?php echo $_SESSION["dataN"]; ?> <p>
-        <p>Data puxada do banco</p>
-        <p class="titulo-area-usuario">CPF: <?php echo $_SESSION["cpf"]; ?></p>
-        <p>CPF puxado do banco</p>
-        <p class="titulo-area-usuario">Endereço: <?php echo $enderecocompleto; ?></p>
-        <p>Endereço puxado do banco</p>
+        <p class="titulo-area-usuario">E-mail:  <p>
+        <p> <?php echo $_SESSION['email'] ?>  </p>
+        <p class="titulo-area-usuario">Data de Nascimento:  <p>
+        <p><?php echo $_SESSION['datan'] ?></p>
+        <p class="titulo-area-usuario">CPF: </p>
+        <p><?php echo $_SESSION['cpf'] ?></p>
+        <p class="titulo-area-usuario">Endereço: </p>
+        <p><?php echo $_SESSION['endereco'] ?></p>
         </div>
 
         <div id="bloco-login" class="bloco-ticket bloco-login">
