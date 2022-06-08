@@ -6,4 +6,4 @@ Paula Menezes Vila Nova - 6555326
 João Gabriel Cavalcante - 6346396
 Roberto Aguiar Silveira - 7428889
 Laura Bianca Castro Santos - 6730732
-Com objetivo com de realizar um site de realização de sorteios.
+Com objetivo de realizar um site de realização de sorteios.
