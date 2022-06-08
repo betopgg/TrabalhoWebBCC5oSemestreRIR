@@ -1,4 +1,4 @@
-# TrabalhowebRIR
+# Trabalho Web Página de Sorteio de ingresso Rock In Rio
 Trabalho realizado por 5o semestre de BCC da faculdade FMU em 2022:
 
 	Julia Amadio Merces dos Santos - 7271263
