@@ -12,16 +12,15 @@ $email = addslashes($_POST['email']);
 $senha = addslashes($_POST['senha']);
 
 if($u->login($email, $senha) == true) {        
-    if(isset($_SESSION['id'])){
-        header('Location: ../areausuario.php');
+    if(isset($_SESSION['id'])) {
         
         if($_SESSION['nivel'] == 'adm'){
             header("Location: ../areaadm.php");
 
+        } else {
+            header('Location: ../areausuario.php');
+        
         }
-else{
-    header('Location: ../login.html');
-}
 }
 
 else{
@@ -34,9 +33,7 @@ else{
 }
 }
 else{
-    header('Location: ../login.html');
+    header('Location: ../login.html'); }
 
-
-}
 
 ?>
